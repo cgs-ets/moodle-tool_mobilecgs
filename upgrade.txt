@@ -1,0 +1,6 @@
+This files describes changes in tool_mobilecgs code.
+Information provided here is intended especially for developers.
+
+=== 1.0 ===
+
+ * Custom tool to extend the functionality of mobile for the CGS app.
