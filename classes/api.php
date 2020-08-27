@@ -51,7 +51,7 @@ class api {
         global $CFG, $SITE;
 
         // Get the standard mobile settings.
-        $settings = \tool_mobile\api::get_config();
+        $settings = \tool_mobile\api::get_config($section);
 
         // Add custom settings.
         $settings->tool_mobilecgs_disabledblocks = get_config('tool_mobilecgs', 'disabledblocks');
