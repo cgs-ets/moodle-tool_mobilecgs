@@ -41,19 +41,41 @@ $PAGE->navbar->add($title);
 require_login();
 require_capability('moodle/site:config', $context, $USER->id); 
 
+//$api = new \block_my_day_timetable\external\api();
+//header('Content-Type: text/plain');
+//var_export(
+//	json_encode(
+//		$api->get_timetable_data_for_date("50288","student",1,"2020-09-04",474)
+//	)
+//);
+//exit;
+
+//$blocks = tool_mobilecgs_get_blocks_list();
+//var_export($blocks); 
+//exit;
+
+// Send a notification
+/*$userfrom = \core_user::get_noreply_user();
+$userto = \core_user::get_user_by_username('43563');
+$eventdata = new \core\message\message();
+$eventdata->courseid            = SITEID;
+$eventdata->component           = 'local_announcements';
+$eventdata->name                = 'notifications';
+$eventdata->name            = 'forced';
+$eventdata->userfrom            = $userfrom;
+$eventdata->userto              = $userto;
+$eventdata->subject             = 'TEST NOTIFICATION';
+$eventdata->fullmessage         = 'TEST NOTIFICATION';
+$eventdata->fullmessageformat   = FORMAT_PLAIN;
+$eventdata->fullmessagehtml     = 'TEST NOTIFICATION';
+$eventdata->notification        = 1;
+$eventdata->smallmessage = 'TEST NOTIFICATION';
+echo message_send($eventdata);
+exit;*/
+
+
 // Build page output
 $output = '';
 $output .= $OUTPUT->header();
-
-// Debug code here.
-echo "<pre>";
-
-$blocks = tool_mobilecgs_get_blocks_list();
-var_export($blocks); 
-exit;
-
-
-
-// Final outputs
 $output .= $OUTPUT->footer();
 echo $output;
