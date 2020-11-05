@@ -55,6 +55,7 @@ class api {
 
         // Add custom settings.
         $settings->tool_mobilecgs_disabledblocks = get_config('tool_mobilecgs', 'disabledblocks');
+        $settings->tool_mobilecgs_hidepastcourses = get_config('tool_mobilecgs', 'hidepastcourses');
 
         return $settings;
     }

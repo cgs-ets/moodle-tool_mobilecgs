@@ -26,3 +26,4 @@ $string['pluginname'] = 'CGS Mobile features';
 $string['cgsmobilefeatures'] = 'CGS Mobile features';
 $string['disabledfeatures'] = 'Disabled blocks';
 $string['disabledfeatures_desc'] = 'Select here the blocks you want to hide in the Mobile app for your site.';
+$string['hidepastcourses'] = 'Hide past courses';

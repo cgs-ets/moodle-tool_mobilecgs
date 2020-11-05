@@ -47,6 +47,12 @@ if ($hassiteconfig) {
         $setting = new admin_setting_configmultiselect($name, $title, $description, array(), $options);
         $settings->add($setting);
 
+        // Enable/Disable Digest.
+        $name = 'tool_mobilecgs/hidepastcourses';
+        $title = get_string('hidepastcourses', 'tool_mobilecgs');
+        $setting = new admin_setting_configcheckbox($name, $title, '', 0);
+        $settings->add($setting);
+
     }
 
 }
